@@ -1,0 +1,28 @@
+{
+  "name": "battle-corp",
+  "version": "0.0.1",
+  "description": "An online multiplayer battle game. Battle the coorperations out to the end.",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrestonHager/BattleCorp"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "battle",
+    "corp",
+    "preston"
+  ],
+  "license": "GNU"
+}
