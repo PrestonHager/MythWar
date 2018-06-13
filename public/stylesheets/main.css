@@ -1,0 +1,22 @@
+/* Navigation bar style */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f25994;
+    text-align: center;
+}
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.navbar li a:hover {
+    background-color: #a03961;
+}
+ul.navbar li.active {
+    background-color: #a03961;
+}
