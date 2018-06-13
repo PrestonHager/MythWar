@@ -7,6 +7,9 @@ ul.navbar {
     background-color: #f25994;
     text-align: center;
 }
+ul.navbar li {
+    float: left;
+}
 ul.navbar li a {
     display: block;
     color: white;
