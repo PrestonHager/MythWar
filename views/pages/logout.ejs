@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+
+  <script>
+    $(document).ready(function(){
+      window.localStorage.setItem("profile", "{}");
+      $("<a href=\"/"\" style=\"display:none;\"></a>").appendTo($(document.body))[0].click();
+    });
+  </script>
+</body>
+</html>
