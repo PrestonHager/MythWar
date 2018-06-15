@@ -7,11 +7,24 @@
 <body>
   <% include ../partials/nav.ejs %>
 
-<div class="player-login" style="display:none;">
-  <% include ../partials/login.ejs %>
-</div>
-<div class="player-dashboard" style="display:none;">
-  <% include ../partials/dashboard.ejs %>
-</div>
+  <h1 id="enable-js">Please enable Javascript to play Battle Corp.</h1>
+  <h3 id="title" style="display:inline-block;">Battle Corp.</h3>
+  <h4 id="title-by" style="display:inline-block;"> by: Preston & Aiden Hager</h4>
+  <script>
+    $("h1#enable-js").hide();
+    function redirect_for(url) {
+      $("<a href=\"/"+url+"\" style=\"display:none;\"></a>").appendTo($(document.body))[0].click();
+    }
+    $(document).ready(function(){
+      if (!window.localStorage.getItem("profile")) {
+        window.localStorage.setItem("profile", "{}");
+        redirect_for("login");
+      } else if (window.localStorage.getItem("profile") == "{}") {
+        redirect_for("login");
+      } else {
+        redirect_for("dashboard");
+      }
+    });
+  </script>
 </body>
 </html>

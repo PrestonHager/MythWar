@@ -1,0 +1,33 @@
+/* Login page style */
+div.player-login-parent {
+  display: inline-block;
+  position: absolute;
+  width: 60%;
+  height: 75%;
+  margin: 0% 20% 0% 20%;
+  background: #9f2fe0;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.player-login {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.player-login a {
+  color: #29dbae;
+}
+div.player-login button {
+  background: #29dbae;
+}
+div.player-login button:hover {
+  background: #20a2a5;
+}
+div.player-login input {
+  color: black;
+}
+div.g-signin2 {
+  display: inline-block;
+}
