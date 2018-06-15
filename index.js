@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/login', (req, res) => res.render('pages/login'))
+  .get('/dashboard', (req, res) => res.render('pages/login'))
   .get('/play', (req, res) => res.render('pages/play'))
   .get('/signup', (req, res) => res.render('pages/signup'))
 
