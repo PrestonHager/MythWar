@@ -10,9 +10,15 @@ app.use(express.static(path.join(__dirname, 'public')))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/login', (req, res) => res.render('pages/login'))
-  .get('/dashboard', (req, res) => res.render('pages/dashboard'))
   .get('/play', (req, res) => res.render('pages/play'))
   .get('/signup', (req, res) => res.render('pages/signup'))
+
+app.use(express.urlencoded())
+app.use(express.json())
+app.post('/dashboard', function(req, res) {
+  var id = req.body.id;
+  res.render('pages/dashboard')
+})
 
 app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
