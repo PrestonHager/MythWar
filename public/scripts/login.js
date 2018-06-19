@@ -7,7 +7,7 @@ function onSignIn(googleUser) {
   var auth2 = gapi.auth2.getAuthInstance();
   auth2.disconnect();
   // now redirect the user with a post so the server knows the user id.
-  var form = $('<form action="/dashboard" method="post"><input type="text" name="id" value="'+id+'"></form>');
+  var form = $('<form action="/dashboard" method="post" />').append($('<input style="display:none" type="text" name="profile" />').val(JSON.stringify(new_profile)));
   $(document.body).append(form);
   form.submit();
 };
