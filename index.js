@@ -23,7 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')))
   .get('/dashboard', (req, res) => res.render('pages/dashboard'))
   .get('/play', (req, res) => res.render('pages/play'))
   .get('/signup', (req, res) => res.render('pages/signup'))
-  .get('/logout', (req, res) => res.render('pages/logout'));
+  .get('/logout', (req, res) => res.render('pages/logout'))
+  .get('/privacy-policy', (req, res) => res.render('pages/privacy_policy'));
 
 app.use(express.urlencoded());
 app.use(express.json());
