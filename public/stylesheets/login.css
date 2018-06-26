@@ -16,15 +16,6 @@ div.player-login {
   top: 50%;
   transform: translateY(-50%);
 }
-div.player-login a {
-  color: #29dbae;
-}
-div.player-login button {
-  background: #29dbae;
-}
-div.player-login button:hover {
-  background: #20a2a5;
-}
 div.player-login input {
   color: black;
 }

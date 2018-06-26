@@ -1,12 +1,35 @@
-/* Basic Styles */
+/* Basic Styles of Paragraphs */
 p.right {
   float: right;
 }
 p.left {
   float: left;
 }
+p.right8 {
+  margin-right: 8px;
+}
 p.inline {
   display: inline-block;
+}
+
+/* Basic Styles of Links */
+a {
+  color: #29dbae;
+}
+a button {
+  color: white;
+}
+a:hover button {
+  color: white;
+  decoration: none;
+}
+
+/* Basic Styles of Buttons */
+button {
+  background: #29dbae;
+}
+button:hover {
+  background: #20a2a5;
 }
 
 /* Navigation bar style */
@@ -44,4 +67,12 @@ body {
 /* Footer */
 div#footer {
   background: #9f2fe0;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 8px 8px 0px 8px;
+}
+div#footer p {
+  color: white;
 }
