@@ -1,1 +1,1 @@
-# BattleCorp
+# Myth War

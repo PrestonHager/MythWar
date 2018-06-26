@@ -1,0 +1,50 @@
+{"allCards": [
+{
+  "id": "4a78bfc5-5592-4223-86d6-b6beaf6447ac",
+  "rarity": 1,
+  "rarity_string": "common",
+  "power": 1,
+  "name": "Z Space",
+  "ability": {
+    "text": "Lowest number wins.",
+    "action": 1,
+    "value": 0
+  }
+},
+{
+  "id": "23c93733-76d9-43ba-8ccc-4eba9d97919e",
+  "rarity": 1,
+  "rarity_string": "common",
+  "power": 1,
+  "name": "Rock L",
+  "ability": {
+    "text": "Add 3 to your next card's power.",
+    "action": 2,
+    "value": 1
+  }
+},
+{
+  "id": "83ba4008-88d3-4217-bffc-f6b48c8ea288",
+  "rarity": 3,
+  "rarity_string": "legendary",
+  "power": -1,
+  "name": "Pet- Copy Rat",
+  "ability": {
+    "text": "Copy the opponent's card and divide the power by two (round down).",
+    "action": 0,
+    "value": 2
+  }
+},
+{
+  "id": "7b74aaff-345f-40b0-af58-1027034df29a",
+  "rarity": 3,
+  "rarity_string": "legendary",
+  "power": -1,
+  "name": "Pet- Copy Cat",
+  "ability": {
+    "text": "Copy the opponent's card and multiply the power by two.",
+    "action": 0,
+    "value": 2
+  }
+}
+]}
