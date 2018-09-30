@@ -1,0 +1,21 @@
+/* Signup page style */
+div.player-signup-parent {
+  display: inline-block;
+  position: absolute;
+  width: 60%;
+  height: 75%;
+  margin: 0% 20% 0% 20%;
+  background: #9f2fe0;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.player-signup {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.player-signup input {
+  color: black;
+}
