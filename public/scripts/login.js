@@ -20,5 +20,7 @@ $(document).ready(function(){
     $("div.player-login-parent").show();
   } else if (window.localStorage.getItem("profile") == "{}") {
     $("div.player-login-parent").show();
+  } else {
+    $("<a href=\"/dashboard\"></a>").appendTo("body").click();
   }
 });
