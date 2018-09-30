@@ -1,7 +1,7 @@
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   var id = googleUser.getAuthResponse().id_token;
-  new_profile = {"id": id, "client_id": profile.getId(), "name": profile.getName(), "image": profile.getImageUrl(), "email": profile.getEmail()};
+  var new_profile = {"id": id, "client_id": profile.getId(), "name": profile.getName(), "image": profile.getImageUrl(), "email": profile.getEmail()};
   window.localStorage.setItem("profile", JSON.stringify(new_profile));
   // sign out the user so that it doesn't auto sign-in again.
   var auth2 = gapi.auth2.getAuthInstance();
@@ -15,12 +15,15 @@ function onFailure(error) {
   console.log(error);
 };
 $(document).ready(function(){
-  if (!window.localStorage.getItem("profile")) {
+  var profile = window.localStorage.getItem("profile");
+  if (!profile) {
     window.localStorage.setItem("profile", "{}");
     $("div.player-login-parent").show();
-  } else if (window.localStorage.getItem("profile") == "{}") {
+  } else if (profile == "{}") {
     $("div.player-login-parent").show();
   } else {
-    $("<a href=\"/dashboard\"></a>").appendTo("body").click();
+    var form = $('<form action="/dashboard" method="post" />').append($('<input style="display:none" type="text" name="profile" />').val(JSON.stringify(profile)));
+    $(document.body).append(form);
+    form.submit();
   }
 });
